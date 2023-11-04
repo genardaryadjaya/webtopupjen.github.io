@@ -22,7 +22,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: #000000;
+  color: #fff;
+  height: 000px;
 }
 
 /* Navbar */
@@ -154,15 +155,13 @@ body {
 /* About Section */
 .about,
 .menu,
-.attach,
-.tugas {
+.attach {
   padding: 10rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
-.attach h2,
-.tugas h2 {
+.attach h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
@@ -170,8 +169,7 @@ body {
 
 .about h2 span,
 .menu h2 span,
-.attach h2 span,
-.tugas h2 span {
+.attach h2 span {
   color: var(--primary);
 }
 
@@ -204,34 +202,108 @@ body {
   line-height: 1.6rem;
 }
 
-/* Tugas Section */
-.tugas .row {
-  display: flex;
+/*Tugas STI*/
+.tugassti {
+  padding: 10rem 0 1.4rem;
+  background-color: rgb(170, 48, 48);
 }
-
-.tugas .row .tugas-img {
-  flex: 1 1 45rem;
-}
-
-.tugas .row .tugas-img img {
-  width: 30%;
-}
-
-.tugas .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
-}
-
-.tugas .row .content h3 {
-  font-size: 1.8rem;
+.tugassti .row-sti .col-sm-12 h2 {
+  text-align: center;
+  font-size: 3.6rem;
   margin-bottom: 1rem;
 }
-
-.tugas .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
+.tugassti .row-sti .col-sm-12 span {
+  color: var(--primary);
+}
+.tugassti .row-sti p {
+  text-align: center;
+  max-width: 50rem;
+  margin: auto;
+  font-size: 2rem;
   font-weight: 100;
-  line-height: 1.6rem;
+  line-height: 1.6;
+}
+.tugassti .row {
+  border-radius: 10px;
+}
+.tugassti .row .col-sm-4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.tugassti .row .col-sm-4 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.tugassti .row .col-sm-4 a img {
+  width: 100px;
+  margin-right: 1px;
+}
+
+/*Contact Section*/
+.contact {
+  padding: 10rem 7% 1.4rem;
+  background-color: black;
+}
+.contact h2 {
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+.contact h2 span {
+  color: var(--primary);
+}
+.contact p {
+  text-align: center;
+  max-width: 70rem;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: rgb(14, 13, 13);
+  flex-wrap: wrap;
+}
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: var(--bg);
+  border: 2px solid var(--primary);
+  padding-left: 2rem;
+}
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+}
+.contact .row form .btn {
+  color: var(--primary);
+  background-color: #fff;
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.contact .input-group i {
+  font-size: 2rem;
 }
 
 /* Menu Section */
@@ -317,7 +389,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #fbff19;
+  background-color: #b0b322;
   text-align: center;
   padding: 3rem 0 3rem;
   margin-top: 10rem;
