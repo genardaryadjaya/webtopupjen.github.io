@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(255, 239, 19, 0.801);
+  background-color: rgba(255, 19, 19, 0.801);
   border-bottom: 4px solid #181bcc;
   position: fixed;
   top: 0;
@@ -201,11 +201,33 @@ body {
   font-weight: 100;
   line-height: 1.6rem;
 }
+/* Card Section */
+.card {
+  padding: 8rem 7% 1.4rem;
+  background-color: var(--bg);
+}
+.card h2 {
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+.card h2 span {
+  color: var(--primary);
+}
+.card .card-img img {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20rem;
+}
+.card .card-img button {
+  background: var(--bg);
+}
 
 /*Tugas STI*/
 .tugassti {
-  padding: 10rem 0 1.4rem;
-  background-color: rgb(170, 48, 48);
+  padding: 10rem 7% 1.4rem;
+  background-color: var(--bg);
 }
 .tugassti .row-sti .col-sm-12 h2 {
   text-align: center;
@@ -217,28 +239,20 @@ body {
 }
 .tugassti .row-sti p {
   text-align: center;
-  max-width: 50rem;
+  max-width: 70rem;
   margin: auto;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.6;
 }
-.tugassti .row {
-  border-radius: 10px;
-}
-.tugassti .row .col-sm-4 {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-  justify-content: center;
-}
-.tugassti .row .col-sm-4 {
-  text-align: center;
-  padding-bottom: 1rem;
-}
-.tugassti .row .col-sm-4 a img {
-  width: 100px;
-  margin-right: 1px;
+.tugassti .row .dropdown button {
+  background: linear-gradient(to right, #448bdb, #44d3e3);
+  margin-bottom: 1rem;
+  margin-left: 8.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  padding: 0.7rem 0.8rem;
 }
 
 /*Contact Section*/
